@@ -5,12 +5,23 @@
     <title>Title</title>
     <script>
    function show() {
-   	console.log('2000px');
    	var element = document.getElementById("description");
         element.style.maxHeight  = "2000px";
         var element = document.getElementById("read_text");
         element.style.display = 'none';  
         var element = document.getElementById("gradient");
+        element.style.display = 'none';  
+        var element = document.getElementById("сollapse");
+        element.style.display = 'block';  
+   }
+   function hide() {
+   	var element = document.getElementById("description");
+        element.style.maxHeight  = "341px";
+        var element = document.getElementById("read_text");
+        element.style.display = 'block';  
+        var element = document.getElementById("gradient");
+        element.style.display = 'block';  
+        var element = document.getElementById("сollapse");
         element.style.display = 'none';  
    }
   </script>
@@ -524,10 +535,10 @@
 					    <div class="ZFr60d CeoRYc"></div><span class="CwaK9"><span class="RveJvd snByac" onclick="show()">Read more</span></span>
 				    </div>
 			    </div>
-			    <div class="n1EcZc uhqVLe">
+			    <div id="сollapse" class="n1EcZc" style="display: none;">
 				    <div aria-disabled="false" aria-label="Collapse" class="U26fgb O0WRkf oG5Srb C0oVfc n9lfJ M9Bg4d" role="button" tabindex="0">
 					    <div class="Vwe4Vb MbhUzd"></div>
-					    <div class="ZFr60d CeoRYc"></div><span class="CwaK9"><span class="RveJvd snByac">Collapse</span></span>
+					    <div class="ZFr60d CeoRYc"></div><span class="CwaK9"><span class="RveJvd snByac" onclick="hide()">Collapse</span></span>
 				    </div>
 			    </div>
 		    </div>
